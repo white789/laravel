@@ -14,6 +14,6 @@ class BlogPost extends Model
 
     public function comments(): HasMany
     {
-        return $this->hasMany('App\Models\Comment');
+        return $this->hasMany(Comment::class);
     }
 }

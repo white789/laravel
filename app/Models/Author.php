@@ -12,6 +12,6 @@ class Author extends Model
 
     public function profile(): HasOne
     {
-        return $this->hasOne('App\Models\Profile');
+        return $this->hasOne(Profile::class);
     }
 }

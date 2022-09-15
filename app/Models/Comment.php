@@ -13,6 +13,6 @@ class Comment extends Model
     // blog_post_id
     public function blogPost(): BelongsTo
     {
-        return $this->belongsTo('App\Models\BlogPost');
+        return $this->belongsTo(BlogPost::class);
     }
 }
