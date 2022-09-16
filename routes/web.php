@@ -53,6 +53,8 @@ Route::get('/single', AboutController::class);
 Route::resource('posts', PostsController::class);
     //->only('index', 'show', 'create', 'store', 'edit', 'update');
 
+Auth::routes();
+
 //Route::get('/posts', function() use($posts) {
 //    //dd(request()->all());
 //    dd((int)request()->query('page', 1));
